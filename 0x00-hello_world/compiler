@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -Wall -Werror -Wextra -pedantic -std=gnu89 6-size.c -o size && ./size
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 101-quote.c -o quote && ./quote
