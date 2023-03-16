@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -Wall -Werror -Wextra -pedantic -std=gnu89 5-printf.c -o printf && ./printf
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 6-size.c -o size && ./size
