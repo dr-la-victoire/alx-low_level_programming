@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-positive_or_negative.c -o posorneg && ./posorneg
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-last_digit.c -o digit && ./digit
