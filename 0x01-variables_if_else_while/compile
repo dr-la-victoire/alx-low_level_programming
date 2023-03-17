@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -Wall -pedantic -Werror -Wextra -std=gnu89 5-print_numbers.c -o numbers && ./numbers
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 7-print_tebahpla.c -o tebahpla && ./tebahpla
