@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-print_alphabet.c -o lowercase && ./lowercase
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-print_alphabets.c -o alphabet && ./alphabet
