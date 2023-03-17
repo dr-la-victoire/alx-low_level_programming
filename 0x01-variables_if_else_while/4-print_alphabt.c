@@ -2,7 +2,7 @@
 
 /**
  * main - Entry Point
- * 
+ *
  * Description: This program prints the alphabet in lowercase
  * except q and e
  * Return: 0 (Success)
