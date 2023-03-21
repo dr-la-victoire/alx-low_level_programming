@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main.h _putchar.c 7-print_last_digit.c 7-print_last_digit_main.c -o print_last_digit && ./print_last_digit
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main.h _putchar.c 10-add.c 10-add_main.c -o add && ./add
