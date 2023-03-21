@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main.h _putchar.c 2-print_alphabet_x10.c 2-print_alphabet_x10_main.c -o print_alphabet_x10 && ./print_alphabet_x10
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main.h _putchar.c 3-islower.c 3-islower_main.c -o islower && ./islower
