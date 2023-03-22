@@ -10,7 +10,8 @@
 
 int main(void)
 {
-	unsigned long int a, b;
+	unsigned long int a = 1;
+	unsigned long int b = 2;
 	unsigned long int next;
 	unsigned long int i;
 	unsigned long int sum = 0;
