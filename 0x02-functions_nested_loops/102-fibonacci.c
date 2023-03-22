@@ -3,21 +3,32 @@
 /**
  * main - Entry Point
  *
- * Description: This program prints the first 50 fibonacci sequence numbers
+ * Description: This program prints the first 50 Fibonacci numbers
  * Return: 0 (Success)
  */
 
 int main(void)
 {
-	int b = 2;
-	int c, d;
+	long int a = 1;
+	long int b = 2;
+	long int i;
+	long int c = a + b;
 
-	for (c = 3; c <= 50; c++)
+	printf("%ld, %ld, ", a, b);
+	for (i = 3; i <= 50; i++)
 	{
-		d = c + b;
-		b = d;
-		c = b;
-		printf("%d, ", d);
+		if (i != 50)
+		{
+			printf("%ld, ", c);
+			a = b;
+			b = c;
+			c = a + b;
+		}
+		else
+		{
+			printf("%ld\n", c);
+		}
 	}
+
 	return (0);
 }
