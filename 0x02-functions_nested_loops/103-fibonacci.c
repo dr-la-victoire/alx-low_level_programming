@@ -16,13 +16,13 @@ int main(void)
 	unsigned long int i;
 	unsigned long int sum = 0;
 
-	for (i = 0; i < 4000000; i++)
+	for (i = 0; i <= 50; i++)
 	{
 		a = b;
 		b = next;
 		next = a + b;
 
-		if (next % 2 == 0)
+		if (next % 2 == 0 && next < 4000000)
 		{
 			sum = sum + next;
 		}
