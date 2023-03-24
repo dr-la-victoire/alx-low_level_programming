@@ -2,14 +2,14 @@
 
 /**
  * print_triangle - draws a triangle
- * @size: the triangle size
+ * @size: the size of the triangle
  *
  * Return: Nothing
  */
 
 void print_triangle(int size)
 {
-	int space, row, block;
+	int row, block, space;
 
 	if (size <= 0)
 		_putchar('\n');
@@ -17,14 +17,10 @@ void print_triangle(int size)
 	{
 		for (row = 0; row < size; row++)
 		{
-			for (space = 0; space < block; space++)
-			{
-				for (block = 0; block < size; block++)
-				{
-					_putchar('#');
-				}
+			for (space = size - row; space >= 1; space--)
 				_putchar(' ');
-			}
+			for (block = 1; block <= row; block++)
+				_putchar('#');
 			_putchar('\n');
 		}
 	}
