@@ -2,8 +2,8 @@
 
 /**
  * _strcat - concatenates two strings
- * dest: the string we'll add to
- * src: the string wew're adding
+ * @dest: the string we'll add to
+ * @src: the string wew're adding
  *
  * Return: pointer to dest
  */
