@@ -1,23 +1,23 @@
 #include "main.h"
 
 /**
- * _strcmp -  compares two strings
+ * _strcmp - compares two strings.
  * @s1: the first string
  * @s2: the second string
  *
- * Return: 1 if strings are equal or 0 otherwise
+ * Return: the difference between the first letters
  */
 
 int _strcmp(char *s1, char *s2)
 {
-	int i, 
 	int value;
 
-	for (i = 0; s1[i] != '\0' || s2[i] != '\0'; i++)
-	{
-		if (s1[i] > s2[i] || s1[i] < s2[i])
-		{
-			value = s1[i] - s2[i];
-		}
-	}
+	if (*s1 > *s2)
+		value = *s1 - *s2;
+	else if (*s1 < *s2)
+		value = *s1 - *s2;
+	else
+		value = 0;
+
+	return (value);
 }
