@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -Wall -pedantic -Werror -Wextra -std=gnu89 101-print_comb4.c -o combo2 && ./combo2
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 102-print_comb5.c -o combo3 && ./combo3
