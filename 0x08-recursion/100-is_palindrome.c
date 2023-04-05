@@ -21,6 +21,7 @@ int is_palindrome(char *s)
  * checks_palindrome - checks the forward string
  * @i: the counter to loop forward
  * @j: the counter to loop backward
+ * @s: the string
  *
  * Return: 1 if a palindrome or 0 if otherwise
  */
