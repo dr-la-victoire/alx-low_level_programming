@@ -19,16 +19,15 @@ int main(int argc, char *argv[])
 
 	for (i = 0; i < argc; i++)
 	{
-		first_sum = atoi(argv[i]);
-
-		if (isdigit(argv[i]) == 0)
+		if (isdigit(*argv[i]))
 		{
-			printf("Error\n");
-			return (1);
+			first_sum = atoi(argv[i]);
+			sum += first_sum;
 		}
 		else
 		{
-			sum += first_sum;
+			printf("Error\n");
+			return (1);
 		}
 	}
 
