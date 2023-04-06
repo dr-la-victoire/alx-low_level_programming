@@ -1,32 +1,29 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - Entry Point
  * @argc: the argument count
- * @argv: an array of the arguments passed
+ * @argv: an array that contains the arguments passed
  *
- * Description: A program that multiplies two integers
- * Return: 0 (Success) or 1 (error)
+ * Description: This program multiplies two int arguments
+ * Return: 0 (Success) or 1 (Error)
  */
 
 int main(int argc, char *argv[])
 {
-	int i, a, b;
+	int a, b;
 
-	if (argc < 2 || argc > 2)
+	if (argc < 3 || argc > 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
+
 	else
 	{
-		for (i = 0; i < argc; i++)
-		{
-			if (i == 1)
-				a = argv[i];
-			if (i == 2)
-				b = argv[i];
-		}
+		a = atoi(argv[1]);
+		b = atoi(argv[2]);
 
 		printf("%d\n", a * b);
 	}

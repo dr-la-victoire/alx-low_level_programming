@@ -12,7 +12,16 @@
 
 int main(int argc, char *argv[])
 {
-	if (argv
+	int i;
+	int num = 0;
+	(void) argv;
+
+	for (i = 0; i < argc - 1; i++)
+	{
+		num++;
+	}
+
+	printf("%d\n", num);
 
 	return (0);
 }
