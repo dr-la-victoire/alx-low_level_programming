@@ -18,16 +18,16 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 	if (size > 0)
 	{
-		pArray = (char*) malloc(size * sizeof(char));
+		pArray = (char *) malloc(size * sizeof(char));
 
 		if (pArray == NULL)
 			return (NULL);
-		else
-			for (i = 0; i < size; i++)
-				pArray[i] = c;
+
+		for (i = 0; i < size; i++)
+			pArray[i] = c;
 	}
 
-	free(pArray);
+/*	free(pArray);*/
 
 	return (pArray);
 }
