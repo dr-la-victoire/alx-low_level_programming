@@ -5,7 +5,7 @@
  * struct dog - a struct of a dog
  * @name: the dog name
  * @age: the dog age
- * @owner; the dog owner
+ * @owner: the dog owner
  *
  * Description: a user-defined type that shows the name, age and owner
  * of a dog
