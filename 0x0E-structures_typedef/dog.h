@@ -11,8 +11,6 @@
  * of a dog
  */
 
-#include <stdio.h>
-
 struct dog
 {
 	char *name;
