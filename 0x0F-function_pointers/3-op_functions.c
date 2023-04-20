@@ -5,7 +5,7 @@
  * @a: the first one
  * @b: the second one
  *
- * Retun: the sum of a and b
+ * Return: the sum of a and b
  */
 
 int op_add(int a, int b)
