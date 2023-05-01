@@ -14,11 +14,8 @@ list_t *add_node(list_t **head, const char *str)
 	size_t len = 0;
 	list_t *newPtr;
 
-	while (*str != '\0')
-	{
+	while (str[len])
 		len++;
-		str++;
-	}
 
 	newPtr = (list_t *)malloc(sizeof(list_t));
 
