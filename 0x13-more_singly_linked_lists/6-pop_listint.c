@@ -10,14 +10,16 @@
 int pop_listint(listint_t **head)
 {
 	listint_t *ptr;
+	int value;
 
 	if (head == NULL || *head == NULL)
 		return (0);
 
 	ptr = (listint_t *)malloc(sizeof(listint_t));
 	ptr = *head;
-	*head = *head->next;
+	value = ptr->n;
+	*head = (*head)->next;
 	free(ptr);
 
-	return (*head->n);
+	return (head);
 }
