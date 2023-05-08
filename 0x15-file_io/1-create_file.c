@@ -10,12 +10,13 @@
 
 int create_file(const char *filename, char *text_content)
 {
-	char *text;
-	ssize_t o, w;
+	int fd, w;
 	int len = 0;
 
 	if (filename == NULL)
 		return (-1);
+	if (text_content == NULL)
+		text_content = "";
 
 	while (*text_content != '\0')
 	{
@@ -23,17 +24,12 @@ int create_file(const char *filename, char *text_content)
 		text_content++;
 	}
 
-	text = malloc(sizeof(char) * len + 1);
-	o = open(filename, O_CREAT | O_WRONLY | O_TRUNC, S_IRUSR | S_IWUSR);
-	w = write(STDOUT_FILENO, text, len + 1);
-
-	if (o == -1 || w == -1)
-	{
-		free(text);
+	fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, S_IRUSR | S_IWUSR);
+	w = write(fd, text_content, len);
+	if (fd == -1 || w == -1)
 		return (-1);
-	}
+	close(fd);
 
-	free(text);
-	close(o);
-	return (-1);
+	return (1);
+
 }
