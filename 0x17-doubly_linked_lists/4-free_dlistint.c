@@ -9,8 +9,16 @@
 
 void free_dlistint(dlistint_t *head)
 {
-	while (head != NULL)
+	dlistint_t *temp; /* temporary ptr for head */
+
+	if (head != NULL)
 	{
-		free(head->n);
+		while (head->prev != NULL) /*going 2 the start of the list */
+			head = head->prev;
+		while ((temp = head) != NULL) /* temp has now become hd */
+		{
+			head = head->next; /* going down the list */
+			free(temp); /* freeing each node of the list as we go*/
+		}
 	}
 }
