@@ -16,7 +16,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 	if (hashptr == NULL)
 		return (NULL); /* on failure */
 	/* storing the values */
-	hashptr->array = (hash_node_t **)calloc(sizeof(hash_node_t *));
+	hashptr->array = (hash_node_t **)calloc(size, sizeof(hash_node_t *));
 	if (hashptr->array == NULL)
 		return (NULL);
 	hashptr->size = size;
