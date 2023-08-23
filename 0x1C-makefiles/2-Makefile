@@ -3,9 +3,5 @@ NAME= school
 SRC= main.c school.c
 OBJ= main.o school.o
 
-all: $(NAME)
-
-$(NAME): $(OBJ)
-	$(CC) $^ -o $@
-$(OBJ): $(SRC)
-	$(CC) -c $^
+all: $(OBJ)
+	$(CC) $^ -o $(NAME)
