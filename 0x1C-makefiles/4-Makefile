@@ -12,7 +12,7 @@ oclean:
 	$(RM) $(OBJ)
 
 clean: oclean
-	$(RM) $(NAME)
+	$(RM) *~$(NAME)
 
 fclean: clean oclean
 
