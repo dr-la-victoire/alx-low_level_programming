@@ -4,13 +4,8 @@ OBJ= main.o school.o
 NAME= school
 RM= rm -f
 
-all: $(NAME)
-
-$(NAME): $(OBJ):
-	$(CC) $^ -o $@
-
-$(OBJ): $(SRC)
-	$(CC) -c $^
+all: $(OBJ)
+	$(CC) $^ -o $(NAME)
 
 oclean:
 	$(RM) $(OBJ)
@@ -18,8 +13,8 @@ oclean:
 clean: oclean
 	$(RM) $(NAME)
 
-fclean: clean
+fclean: clean oclean
 
-re: fclean all
+re: oclean all
 
 
