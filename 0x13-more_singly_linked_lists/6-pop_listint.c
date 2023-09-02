@@ -9,17 +9,19 @@
 
 int pop_listint(listint_t **head)
 {
-	listint_t *ptr;
-	int value;
+	int data;
+	listint_t *temp;
 
-	if (head == NULL || *head == NULL)
+	temp = *head;
+	if (head == NULL)
+	{
 		return (0);
+	}
 
-	ptr = (listint_t *)malloc(sizeof(listint_t));
-	ptr = *head;
-	value = ptr->n;
-	*head = (*head)->next;
-	free(ptr);
+	data = temp->n;
+	*head = temp->next;
+	temp->next = NULL;
+	free(temp);
 
-	return (head);
+	return (data);
 }
