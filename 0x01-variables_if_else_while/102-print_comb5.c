@@ -11,17 +11,21 @@ int main(void)
 {
 	int a, b;
 
-	for (a = 48; a <= 51; a++)
+	for (a = 0; a < 100; a++)
 	{
-		putchar(a);
-		for (b = 49; b <= 51; b++)
+		for (b = a + 1; b < 100; b++)
 		{
-			putchar(a);
+			putchar(a / 10 + '0');
+			putchar(a % 10 + '0');
 			putchar(' ');
-			putchar(a);
-			putchar(b);
-			putchar(',');
-			putchar(' ');
+			putchar(b / 10 + '0');
+			putchar(b % 10 + '0');
+
+			if (a != 98 || b != 99)
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
 
